@@ -1,0 +1,142 @@
+#hero {
+    background-image: url("img/portrait-man-wearing-sunglasses.jpg");
+    height: 40vh;  /* Reduce height to fit as a banner */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center align text */
+    background-position: center top -50px;
+    
+}
+#hero h2, #hero p {
+    color: #ffffff !important; /* Force white text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
+/* Section Icons */
+.feature-icon {
+    font-size: 40px;
+    color: #DE3163;
+    margin-bottom: 15px;
+}
+
+.feature-img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.clothing-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Section Styles */
+.body-scanning, .outfit-builder, .live-fashion-show {
+    background-color: linear-gradient(135deg, #ffffff, #f9f9f9);  /* White background for sections */
+    border: 1px solid  #e3e3e3;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.body-scanning:hover, .outfit-builder:hover, .live-fashion-show:hover {
+    transform: translateY(-7px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Clothing Items Layout */
+.clothing-items {
+    display: flex;
+    gap: 20px; /* Slightly reduced gap for a balanced layout */
+    justify-content: center;
+    flex-wrap: nowrap; /* Ensures items stay in one row */
+}
+
+.item {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smoother effect */
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: scale(1.02); /* Reduced hover scale effect */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Lighter shadow */
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out; /* Softer transition */
+}
+
+.item:hover img {
+    transform: scale(1.03); /* Subtle zoom effect */
+}
+
+/* Selected Outfit Styles */
+#selected-outfit {
+    margin-top: 20px;
+    padding: 16px;
+    border: 2px dashed #aaa;
+    background: linear-gradient(135deg, #f9f9f9, #ececec);
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: #444;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#selected-outfit:hover {
+    border-color: #777;
+    background: linear-gradient(135deg, #ffffff, #e4e4e4);
+    transform: scale(1.02);
+}
+
+/* Button Styles */
+button {
+    background-color: #DE3163; /* Primary Color */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(222, 49, 99, 0.2);
+}
+
+button:hover {
+    background-color: #C92B57; /* Slightly darker on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(222, 49, 99, 0.3);
+}
+
+/* Video Styles */
+.live-fashion-show video {
+    width: 100%; /* Full width for video */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.live-fashion-show video:hover {
+    transform: scale(1.02);
+}
