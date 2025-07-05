@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOVA CLOTHINGS - Features</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="features.css"><!-- Link to your existing CSS file -->
+    <link rel="icon" type="image/png" href="img/woman-clothes.png">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <section id="header">
+        <a href="#" style="display: flex; align-items: center;">
+            <img src="img/logo-removebg-preview.png" alt="Logo" style="height: 120px; width: auto; position: relative; top: 0px;">
+        </a> 
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="features.html">Features</a></li> <!-- Link to the new features page -->
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html">
+                        <svg width="24" height="24" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 5h10l10 40h20l10-40H5z" stroke="#000" stroke-width="4" fill="none"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hero">
+       <h2 class="animate__animated animate__fadeInDown">#Explore Our Unique Features</h2>
+        <p>Experience the Future of Fashion </p>
+    </section>
+
+    <!-- 3D Body Scanning and Custom Fit -->
+    <div class="body-scanning">
+        <i class="fas fa-camera feature-icon"></i>
+        <h2>3D Body Scanning & Custom Fit</h2>
+        <p>Upload your measurements or use your smartphone for 3D scanning.</p>
+        <input type="file" id="body-scan-upload" accept="image/*" />
+        <button id="scan-button">Scan My Body</button>
+    </div>
+    
+    <div class="outfit-builder">
+        <i class="fas fa-tshirt feature-icon"></i>
+        <h2>AI-Powered Outfit Builder</h2>
+        <p>Mix and match clothing items to create your perfect outfit.</p>
+        <div class="clothing-items">
+            <div class="item" data-item="Shirt">
+                <img src="img/IMG-20250322-WA0014.jpg" alt="Pink Embroidered Net Saree with a Matching Veil">
+                <p>Pink Embroidered Net Saree with a Matching Veil</p>
+            </div>
+            <div class="item" data-item="Pants">
+                <img src="img/IMG-20250322-WA0027.jpg" alt="Teal and Pink Floral Mirror Work Lehenga">
+                <p>Teal and Pink Floral Mirror Work Lehenga</p>
+            </div>
+            <div class="item" data-item="Shoes">
+                <img src="img/IMG-20250322-WA0020.jpg" alt="Rustic Bohemian Block Print Ghagra Set">
+                <p>Rustic Bohemian Block Print Ghagra Set</p>
+            </div>
+        </div>
+        <h3>Your Outfit:</h3>
+        <div id="selected-outfit"></div>
+        <button id="purchase-button">Purchase Outfit</button>
+    </div>
+    
+    <div class="live-fashion-show">
+        <i class="fas fa-video feature-icon"></i>
+        
+        <h2>Live Fashion Show</h2>
+        <p>Watch live fashion shows and shop for exclusive outfits.</p>
+        <video id="fashion-show-video" controls>
+            <source src="img/fashion-show.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="buy-now-button">Buy Now</button>
+    </div>
+    
+
+    <script src="features.js"></script> <!-- Link to the new JavaScript file -->
+</body>
+</html>
